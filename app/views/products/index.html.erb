@@ -1,0 +1,7 @@
+<h1> Listing Products </h1>
+
+<% @products.each do |product| %>
+  <%= product.title %><br/>
+  <%= truncate(product.description, length: 80) %><br/>
+  <%= product.price %><br/>
+<% end %>
